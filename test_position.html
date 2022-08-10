@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven K.Code </title>
+
+    <link rel="stylesheet" href="/assets/css/test_position.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="board">
+            <div class="level-block">
+                <p class="level-title">NIVEAU:</p>
+                <p id="level">1</p>
+            </div>
+
+            <div class="user-score-block">
+                <p class="user-pseudo" id="user-pseudo"></p>
+                <p class="user-pseudo">Catégorie : <span class="user-score" id="user-categorie"></span></p>
+                <p class="user-pseudo">Win : <span class="user-score" id="user-score">0</span></p>
+                <p class="user-pseudo">Loose : <span class="user-score" id="user-loose">0</span></p>
+            </div>
+
+            <img class="pending-img" src="/assets/images/pending.png" alt="">
+
+            <!-- <div class="ranking-block">
+                <p class="ranking-title">
+                    Classement
+                </p>
+                <div class="user-1">
+                    <p class="user-name">
+                        Nebra :
+                    </p>
+                    <p class="user-score">
+                        200
+                    </p>
+                </div>
+                <div class="user-2">
+                    <p class="user-name">
+                        worrior :
+                    </p>
+                    <p class="user-score">
+                        200
+                    </p>
+                </div>
+                <div class="user-3">
+                    <p class="user-name">
+                        Black honter :
+                    </p>
+                    <p class="user-score">
+                        180
+                    </p>
+                </div>
+                <div class="user-4">
+                    <p class="user-name">
+                        The-beginner :
+                    </p>
+                    <p class="user-score">
+                        160
+                    </p>
+                </div>
+                <div class="user-5">
+                    <p class="user-name">
+                        Angel :
+                    </p>
+                    <p class="user-score">
+                        156
+                    </p>
+                </div>
+            </div>
+
+            <div class="play-time">
+                <p class="play-time-title">
+                    TEMPS DE JEUX
+                </p>
+                <P class="time">
+                    5 min
+                </P>
+            </div>
+
+            <div class="words-per-second">
+                <p class="wps-title">
+                    Mot par seconde
+                </p>
+                <P class="wps-score">
+                    2 /s
+                </P>
+            </div> -->
+        </div>
+
+        <div id="playground">
+
+            <div class="typing">
+                <form action="#" method="post">
+                    <input type="text" name="word" id="word" placeholder="The word here">
+                </form>
+            </div>
+        </div>
+
+        <div class="sounds">
+            <audio id="sounds-background" autoplay loop><source src="/assets/sounds/background-5.mp3" type="audio/mpeg"></audio> 
+            <audio id="sounds-explosion"><source src="/assets/sounds/explosion.mp3" type="audio/mpeg"></audio> 
+            <audio id="sounds-wow"><source src="/assets/sounds/wow.mp3" type="audio/mpeg"></audio> 
+            <audio id="sounds-show"><source src="/assets/sounds/show.mp3" type="audio/mpeg"></audio> 
+            <audio id="sounds-failedword"><source src="/assets/sounds/failedword.wav" type="audio/mpeg"></audio> 
+        </div>
+    </div>
+
+    <script src="/assets/js/test_position.js" defer></script>
+</body>
+
+</html>

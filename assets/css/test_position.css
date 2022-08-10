@@ -1,0 +1,158 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Rubik+Moonrocks&display=swap'); */
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    --white-color: #ffffff;
+    --red-color: #ff0000;
+    --black-color: #000000;
+    --primary-color: #008000;
+}
+
+
+/**
+ * Body
+ */
+
+body {}
+
+.app {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/**
+ * Board
+ */
+
+.app .board {
+    width: 250px;
+    padding: 10px;
+    min-height: 100vh;
+    background: rgb(108, 243, 231);
+    position: relative;
+}
+
+.app .board .level-block {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.app .board .level-title {
+    padding: 10px;
+}
+
+.app .board #level {
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Rubik Moonrocks', 'Lacquer', cursive;
+}
+
+.app .board .user-score-block {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.app .board .user-score-block p:first-child {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.app .board .user-score-block p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.app .board .user-score {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.app .board #user-pseudo {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.app .board .pending-img {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: .3s ease-in-out;
+    width: 128px;
+    height: 350px;
+}
+
+.app .board .pending-img.success {
+    transform: scale(1.05);
+}
+
+
+/**
+ * Playground
+ */
+
+.app #playground {
+    background: #ccc;
+    width: 100%;
+    background-size: cover;
+    background-image: url("/assets/images/background.png");
+    position: relative;
+}
+
+.app #playground #wordDiv,
+.app #playground .wordDiv {
+    min-width: 100px;
+    min-height: 100px;
+    line-height: 100px;
+    height: auto;
+    position: absolute;
+    color: var(--black-color);
+    text-align: center;
+    left: 300px;
+    background-image: url("/assets/images/bulle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.app #playground .typing {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.app #playground .typing input {
+    background-color: #0c6;
+    border: none;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    text-align: center;
+    outline: none;
+}
+
+.app #playground .typing input:focus,
+.app #playground .typing input:hover {
+    outline: none;
+}
